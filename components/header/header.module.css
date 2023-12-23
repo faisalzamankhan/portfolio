@@ -1,20 +1,40 @@
+.nav{
+position: relative;
+}
 
+.nav::after{
+content: "";    
+position: absolute;
+left: 0;
+bottom: 0;
+width: 80%;
+height: 2px;
+background-color: #ec5b53;
+transform: scaleX(0);
+transform-origin: right;
+transition: transform 250ms ease-in;
+}
+
+.nav:hover::after{
+transform: scaleX(1);
+transform-origin: left;
+}
 
 @media(max-width:768px)
 {
-    .button{
-        display: none;
-    }
+  
     .hamburger{
    background-color: #ec5b53;
     width: 40px;
     height: 4px;
-    margin-bottom:10px ;
+    margin-bottom:6px ;
     }
     .hamburgerMenu{
         width: 200px;
-        float: right;
-        
+        float: right; 
+        display: block;
     }
+    
+
 
 }

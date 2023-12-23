@@ -13,7 +13,7 @@ export const Header = () => {
         </div>
         <div className="hidden md:block">
           <ul className="flex py-[39px] ">
-            <li>
+            <li className={style.nav}>
               <a className="hover:text-[#ec5b53] cursor-pointer font-bold mr-2">
                 Home
               </a>
@@ -59,35 +59,37 @@ export const Header = () => {
         </div>
       </div>
       {isMenuOpen && (
-        <div className={`${style.hamburgerMenu} shadow-2xl text-center`}>
+        <div
+          className={`${style.hamburgerMenu} shadow-2xl text-center block md:hidden`}
+        >
           <ul>
-            <li>
-              <a className="hover:text-[#ec5b53] cursor-pointer font-bold mr-2">
+            <li className="mb-2">
+              <a className="hover:text-[#ec5b53] cursor-pointer font-bold ">
                 Home
               </a>
             </li>
-            <li>
-              <a className="hover:text-[#ec5b53] cursor-pointer font-bold mr-2">
+            <li className="mb-2">
+              <a className="hover:text-[#ec5b53] cursor-pointer font-bold">
                 About
               </a>
             </li>
-            <li>
-              <a className="hover:text-[#ec5b53] cursor-pointer font-bold mr-2">
+            <li className="mb-2">
+              <a className="hover:text-[#ec5b53] cursor-pointer font-bold ">
                 Service
               </a>
             </li>
-            <li>
-              <a className="hover:text-[#ec5b53] cursor-pointer font-bold mr-2">
+            <li className="mb-2">
+              <a className="hover:text-[#ec5b53] cursor-pointer font-bold ">
                 Portfolio
               </a>
             </li>
-            <li>
-              <a className="hover:text-[#ec5b53] cursor-pointer font-bold mr-2">
+            <li className="mb-2">
+              <a className="hover:text-[#ec5b53] cursor-pointer font-bold ">
                 Page
               </a>
             </li>
-            <li>
-              <a className="hover:text-[#ec5b53] cursor-pointer font-bold mr-2">
+            <li className="mb-2">
+              <a className="hover:text-[#ec5b53] cursor-pointer font-bold ">
                 Contact
               </a>
             </li>
