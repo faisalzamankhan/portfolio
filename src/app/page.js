@@ -2,6 +2,7 @@ import Image from "next/image";
 import Header from "../../components/header/header";
 import Main from "../../components/main/main";
 import Skills from "../../components/skills/skills";
+import Contact from "../../components/contact/contact";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Header />
       <Main />
       <Skills />
+      <Contact />
       {/* <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever

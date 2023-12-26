@@ -1,4 +1,4 @@
-import Button from "../atom/Button";
+import Button from "../atom/Button/Button";
 
 const Main = () => {
   return (

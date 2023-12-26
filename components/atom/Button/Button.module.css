@@ -1,0 +1,23 @@
+.buttonEffect{
+/* position: relative;
+z-index: 1;     */
+}
+
+.buttonEffect::after{
+  /* content: " ";  */
+  /* position: absolute; */
+  /* background-color:#e44239;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  left: 0; */
+  /* transform: scaleY(0); */
+  /* transition: transform  250ms ease-in; */
+  /* transform-origin: right;  */
+  /* z-index: -1; */
+}
+
+.buttonEffect:hover::after{
+    /* transform: scaleY(1); */
+   /* transform-origin: left; */
+}

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Button from "../atom/Button";
+import Button from "../atom/Button/Button";
 import style from "./header.module.css";
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,9 +11,9 @@ export const Header = () => {
         <div className="mr-1 cursor-pointer">
           <img src="logo.png.webp" />
         </div>
-        <div className="hidden md:block">
-          <ul className="flex py-[39px] ">
-            <li className={style.nav}>
+        <div className="hidden lg:block">
+          <ul className={`flex py-[39px] ${style.nav} space-x-10`}>
+            <li>
               <a className="hover:text-[#ec5b53] cursor-pointer font-bold mr-2">
                 Home
               </a>
@@ -46,11 +46,16 @@ export const Header = () => {
           </ul>
         </div>
 
-        <div className="hidden md:block ">
-          <Button text={"zfaisal863@gmail.com"} />
+        <div className="hidden lg:block ">
+          <Button
+            text={"zfaisal863@gmail.com"}
+            originStart={"origin-left"}
+            originEnd={"origin-right"}
+            scaleAxis={"x"}
+          />
         </div>
         <div
-          className="block md:hidden flex-col items-end"
+          className=" flex-col items-end"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <div className={style.hamburger}></div>

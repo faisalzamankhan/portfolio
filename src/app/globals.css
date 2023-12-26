@@ -20,10 +20,27 @@ h1{
   font-weight: 550;
 }
 
+h4{
+  font-family: "Rufina",serif;
+  font-size: 27px;
+  font-weight: 700;
+  margin-bottom: 21p;
+  display: block;
+}
+p{
+  font-family: "Rufina",serif;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 21p;
+  display: block;
+}
 h5{
   font-family: "Rufina",serif;
   font-size: 25px;
   font-weight: 700;
   margin-bottom: 21p;
+  display: block;
+}
+span{
   display: block;
 }
