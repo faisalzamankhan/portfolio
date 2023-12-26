@@ -14,20 +14,20 @@ const Contact = () => {
             </div>
             <div className="col-span-1 ">
               <input
-                className="w-[100%] px-[18px] py-[6px] h-[48px]"
+                className="w-[100%] px-[18px] py-[6px] h-[48px] border-2"
                 placeholder="Enter your Name"
               />
             </div>
             <div className="col-span-1">
               <input
-                className="w-[100%] px-[18px] py-[6px] h-[48px]"
+                className="w-[100%] px-[18px] py-[6px] h-[48px] border-2"
                 placeholder="Email"
               />
             </div>
 
             <div className="col-span-2">
               <input
-                className="w-[100%] px-[18px] py-[6px] h-[48px] col-span-2"
+                className="w-[100%] px-[18px] py-[6px] h-[48px] col-span-2 border-2"
                 placeholder="Enter Subject"
               />
             </div>

@@ -38,9 +38,28 @@ h5{
   font-family: "Rufina",serif;
   font-size: 25px;
   font-weight: 700;
-  margin-bottom: 21p;
+  margin-bottom: 21px;
   display: block;
 }
 span{
   display: block;
+}
+
+.footer a{
+  font-family: "Rufina",serif;
+  font-size: 50px;
+    display: block;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 20px;
+
+}
+
+.footer span{
+  color: #c5c5dd;
+  
+}
+
+.footer p img{
+  display: inline-block;
 }

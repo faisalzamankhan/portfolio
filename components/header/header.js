@@ -8,11 +8,11 @@ export const Header = () => {
   return (
     <div>
       <div className="flex justify-between items-center">
-        <div className="mr-1 cursor-pointer">
+        <div className="mr-1 cursor-pointer py-[39px]">
           <img src="logo.png.webp" />
         </div>
         <div className="hidden lg:block">
-          <ul className={`flex py-[39px] ${style.nav} space-x-10`}>
+          <ul className={`flex  ${style.nav} space-x-10`}>
             <li>
               <a className="hover:text-[#ec5b53] cursor-pointer font-bold mr-2">
                 Home
@@ -46,21 +46,23 @@ export const Header = () => {
           </ul>
         </div>
 
-        <div className="hidden lg:block ">
-          <Button
-            text={"zfaisal863@gmail.com"}
-            originStart={"origin-left"}
-            originEnd={"origin-right"}
-            scaleAxis={"x"}
-          />
-        </div>
-        <div
-          className=" flex-col items-end"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          <div className={style.hamburger}></div>
-          <div className={style.hamburger}></div>
-          <div className={style.hamburger}></div>
+        <div>
+          <div className="hidden lg:block ">
+            <Button
+              text={"zfaisal863@gmail.com"}
+              originStart={"origin-left"}
+              originEnd={"origin-right"}
+              scaleAxis={"x"}
+            />
+          </div>
+          <div
+            className=" flex-col items-end"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <div className={style.hamburger}></div>
+            <div className={style.hamburger}></div>
+            <div className={style.hamburger}></div>
+          </div>
         </div>
       </div>
       {isMenuOpen && (
