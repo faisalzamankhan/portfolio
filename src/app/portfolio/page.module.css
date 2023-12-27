@@ -1,0 +1,7 @@
+.background{
+    background-image: url("../../../public/hero.jpg");
+    background-size: cover;
+    height: 390px;
+    background-position: center center;
+
+}

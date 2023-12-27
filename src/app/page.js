@@ -1,18 +1,14 @@
-import Image from "next/image";
-import Header from "../../components/header/header";
 import Main from "../../components/main/main";
 import Skills from "../../components/skills/skills";
 import Contact from "../../components/contact/contact";
-import Footer from "../../components/Footer/Footer";
 
 export default function Home() {
   return (
     <>
-      <Header />
       <Main />
       <Skills />
       <Contact />
-      <Footer />
+
       {/* <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
