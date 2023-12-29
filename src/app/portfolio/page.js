@@ -1,10 +1,9 @@
-"use client";
-import ReactPlayer from "react-player";
 import style from "./page.module.css";
 import dynamic from "next/dynamic";
 
-const NoSSR = dynamic(() => import(ReactPlayer), { ssr: false });
-
+const VideoPlayer = dynamic(() => import("../../../components/player/player"), {
+  ssr: false,
+});
 const Portfolio = () => {
   return (
     <div>
@@ -17,7 +16,7 @@ const Portfolio = () => {
           What Services you will <br />
           Get from me!
         </h1>
-        <ReactPlayer url="https://www.youtube.com/watch?v=LXb3EKWsInQ" />
+        <VideoPlayer />
       </div>
     </div>
   );
