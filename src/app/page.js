@@ -4,7 +4,7 @@ import Contact from "../../components/contact/contact";
 
 export default function Home() {
   return (
-    <>
+    <div class="margin">
       <Main />
       <Skills />
       <Contact />
@@ -20,6 +20,6 @@ export default function Home() {
         with desktop publishing software like Aldus PageMaker including versions
         of Lorem Ipsum.
       </p>{" "} */}
-    </>
+    </div>
   );
 }

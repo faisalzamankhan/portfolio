@@ -45,7 +45,7 @@ span{
   display: block;
 }
 
-a{
+Link{
    font-family: "Rufina",serif;
     font-size: 18px;
     display: block;
@@ -53,6 +53,8 @@ a{
     margin-bottom: 20px;
 
 }
+
+
 .footer a{
   font-family: "Rufina",serif;
   font-size: 50px;
@@ -77,4 +79,8 @@ a{
    width: 100%;
    margin: 0 0 0 50px;
    
+}
+
+.margin > *{
+  margin-bottom: 20px; /* Adjust the value as needed */
 }

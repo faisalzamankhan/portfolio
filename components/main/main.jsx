@@ -1,10 +1,11 @@
+import Image from "next/image";
 import Button from "../atom/Button/Button";
 
 const Main = () => {
   return (
     <div className="bg-[url('../../public/hero.jpg')] bg-cover h-auto pl-[2rem] py-[1rem]">
-      <div className=" grid grid-cols-3">
-        <div className="flex flex-col justify-center  col-span-2">
+      <div className=" grid grid-cols-2 grid-cols-1 md:grid-cols-2">
+        <div className="flex flex-col justify-center">
           <p className="text-[#ec5b53]">GET EVERY SINGLE SOLUTIONS</p>
           <h1 className="text-[#002d5b]">I’m Web Developer Faisal Zaman </h1>
           <p>
@@ -19,7 +20,9 @@ const Main = () => {
             PageMaker including versions of Lorem Ipsum.
           </p>
         </div>
-        <div></div>
+        <div style={{ marginBottom: "20px" }}>
+          <Image src="/Faisal.png" width={500} height={200} />
+        </div>
       </div>
       <div className="flex gap-3 max-w-[370px]">
         <Button text={"learn More"} />

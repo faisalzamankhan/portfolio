@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Button from "../atom/Button/Button";
 import style from "./header.module.css";
+import Link from "next/link";
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
@@ -14,34 +15,45 @@ export const Header = () => {
         <div className="hidden lg:block">
           <ul className={`flex  ${style.nav} space-x-10`}>
             <li>
-              <a className="hover:text-[#ec5b53] cursor-pointer font-bold mr-2">
+              <Link
+                href={"/"}
+                className="hover:text-[#ec5b53] cursor-pointer font-bold mr-2"
+              >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="hover:text-[#ec5b53] cursor-pointer font-bold mr-2">
+              <Link
+                href={"/about-me"}
+                className="hover:text-[#ec5b53] cursor-pointer font-bold mr-2"
+              >
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="hover:text-[#ec5b53] cursor-pointer font-bold mr-2">
+              <Link
+                href={"/service"}
+                className="hover:text-[#ec5b53] cursor-pointer font-bold mr-2"
+              >
                 Service
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="hover:text-[#ec5b53] cursor-pointer font-bold mr-2">
+              <Link
+                href={"/portfolio"}
+                className="hover:text-[#ec5b53] cursor-pointer font-bold mr-2"
+              >
                 Portfolio
-              </a>
+              </Link>
             </li>
+
             <li>
-              <a className="hover:text-[#ec5b53] cursor-pointer font-bold mr-2">
-                Page
-              </a>
-            </li>
-            <li>
-              <a className="hover:text-[#ec5b53] cursor-pointer font-bold mr-2">
+              <Link
+                href={"/contact"}
+                className="hover:text-[#ec5b53] cursor-pointer font-bold mr-2"
+              >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
